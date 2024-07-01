@@ -1,0 +1,8 @@
+node{
+  stage('SCM Checkout'){
+    git 'https://github.com/ravikota6394/my-app-2021'
+  }
+  stage('Compile-Package'){
+    sh 'mvn package'
+  }
+}
